@@ -1,0 +1,19 @@
+.footer{
+    background-color: #D63E3D;
+}
+
+.footer-wrap{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0 2rem;
+}
+.footer-content{
+    max-width: 400px;
+}
+
+.footer-pargh{
+    color:#e69e9a;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 21px;
+}

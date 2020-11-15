@@ -1,0 +1,23 @@
+.main-header{
+    position: relative;
+    margin: 2rem 0 12rem;
+    text-align: center;
+}
+
+.main-header .circle {
+    position: absolute;
+  width: 9px;
+  height: 9px;
+  background-color: #E4283E;
+  border-radius: 50%;
+  bottom: -40%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.main-header-subtitle{
+    margin: 1rem 0;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #B3B3B3;
+}

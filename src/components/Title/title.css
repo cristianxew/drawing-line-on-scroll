@@ -1,0 +1,50 @@
+
+.title{
+    position: relative;
+    font-family: "Amaranth";
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    width: 9px;
+    height: 9px;
+    background-color: #E4283E;
+    border-radius: 50%;
+    bottom: 9px;
+    margin-left: 2px;
+}
+
+.title.big::after{
+    width: 12px;
+    height: 12px;
+    margin-left: 0px;
+}
+
+.title.white-circle::after{
+    width: 12px;
+    height: 12px;
+    margin-left: 3px;
+    background-color: white;
+    bottom: 13px;
+}
+
+.white-circle{
+    margin: 0;
+    font-weight: 900;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+
+.big{
+    font-family: "Titillium Web";
+    margin: 0;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3.5rem;
+    height:74px;
+    letter-spacing: 3px;
+}

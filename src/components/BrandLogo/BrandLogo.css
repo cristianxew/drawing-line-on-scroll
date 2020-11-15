@@ -1,0 +1,9 @@
+.brand-logo svg{
+    fill: #5B5B5B;
+    transition: all 0.4s ease;
+}
+
+.brand-logo svg:hover{
+    cursor: pointer;
+    fill: #eaeaea;
+}
