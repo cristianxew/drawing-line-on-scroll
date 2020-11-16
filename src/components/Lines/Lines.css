@@ -1,0 +1,31 @@
+#lines{
+    position: absolute;
+    left: 50%;
+    bottom: -75%;
+}
+
+.dashed {
+    height: 100%;
+  }
+   /*  //the one to be animated */
+   .dashed .p-line--fill-1 {
+    stroke: rgb(250, 9, 9);
+    stroke-width: 3;
+  }
+
+  /* the always visible one */
+  .dashed .p-line--fill-2 {
+    stroke: #a04040;
+    stroke-width: 4;
+  }
+
+   /* //third one */
+  .dashed .p-line--dashed {
+    stroke: rgb(31,30,31);
+    stroke-dasharray: 15;
+    stroke-width: 4;
+  }
+
+  .dashed .p-line {
+    fill: none;
+  }

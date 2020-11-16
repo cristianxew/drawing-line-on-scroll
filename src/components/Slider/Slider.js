@@ -33,18 +33,6 @@ const BrandSlider = () => {
           slidesToShow: 3,
         },
       },
-      {
-        breakpoint: 700,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 500,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
     ],
   }
 

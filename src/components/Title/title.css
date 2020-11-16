@@ -48,3 +48,57 @@
     height:74px;
     letter-spacing: 3px;
 }
+
+@media only screen and (max-width: 900px){
+    .title.big::after{
+        width: 10px;
+        height: 10px;
+        margin-left: 0px;
+        bottom: 15px;
+    }
+    .title.white-circle::after{
+        width: 10px;
+        height: 10px;
+        bottom: 9px;
+    }
+    .title::after{
+        width: 7px;
+        height: 7px;
+        bottom: 7px;
+    }
+    .big{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 480px){
+    .title.big::after{
+        width: 9px;
+        height: 9px;
+        margin-left: 0px;
+        bottom: 14px;
+    }
+    .title::after{
+        width: 7px;
+        height: 7px;
+        bottom: 5px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .title.big::after{
+        width: 8px;
+        height: 8px;
+        margin-left: 0px;
+        bottom: 11px;
+    }
+    .title.white-circle::after{
+        width: 8px;
+        height: 8px;
+        bottom: 7px;
+        margin-left: 1px;
+    }
+    .title::after{
+        width: 6px;
+        height: 6px;
+        bottom: 4.5px;
+    }
+}
