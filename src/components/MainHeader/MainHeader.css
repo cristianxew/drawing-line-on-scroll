@@ -1,18 +1,7 @@
 .main-header{
     position: relative;
-    margin: 2rem 0 12rem;
+    margin: 4rem 0 14rem;
     text-align: center;
-}
-
-.main-header .circle {
-    position: absolute;
-  width: 9px;
-  height: 9px;
-  background-color: #E4283E;
-  border-radius: 50%;
-  bottom: -40%;
-  left: 50%;
-  transform: translate(-50%, 0%);
 }
 
 .main-header-subtitle{
@@ -24,9 +13,11 @@
 
 .main-header #lines {
     left: 50%;
-    bottom: -150%;
-    transform:  translate(-11.3%, -5%);
+    top: 121%;
+    transform:  translate(-.5%, 0%);
 }
+
+
 
 @media only screen and (max-width: 900px){
     .main-header{
@@ -37,10 +28,5 @@
     }
     .main-header-subtitle{
         margin: 0;
-    }
-}
-@media only screen and (max-width: 1100px){
-    .main-header #lines {
-        width: auto;
     }
 }

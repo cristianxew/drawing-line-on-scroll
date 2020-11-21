@@ -1,22 +1,23 @@
 import React from "react"
 import Title from "../Title/Title"
-import Circle from "./Circle"
 import Lines from "../Lines/Lines"
 
 import "./service.css"
 
-const Service = ({ title, text, icon }) => {
+const Service = ({ title, text, icon, isEven }) => {
   return (
     <section className="section-service">
       <div className="service-icon">
         <div className="icon-wrapper">{icon}</div>
-        <Circle />
       </div>
       <article className="service-article">
         <Title title={title} />
         <p className="service-article-text">{text}</p>
       </article>
-      <Lines />
+      <Lines
+        path={isEven ? "M6 12V118.329H612V212" : "M611 12V118.329H5V212"}
+        isEven={isEven}
+      />
     </section>
   )
 }

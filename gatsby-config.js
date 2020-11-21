@@ -8,22 +8,10 @@ module.exports = {
   /* Your site config here */
   plugins: [
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Titillium Web`,
-            variants: [`900`],
-          },
-          {
-            family: `Amaranth`,
-            variants: [`400`, `700`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`400`, `500`],
-          },
-        ],
+        fonts: [`Titillium Web\:900`, `Amaranth\:400,700`, `Roboto\:400,500`],
+        display: "swap",
       },
     },
     {

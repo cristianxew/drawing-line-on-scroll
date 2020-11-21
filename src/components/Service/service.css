@@ -8,10 +8,10 @@
 }
 
 .section-service:nth-of-type(odd)  #lines{
-  transform: scaleY(-1) translate(-50.2%, -1%);
+  transform: translate(-50%, 0%);
 }
 .section-service:nth-of-type(even) #lines{
-  transform: scaleY(1) translate(-50%, 1%);
+  transform:  translate(-50.2%, 0%);
 }
 .section-service:last-of-type #lines{
   display: none;
@@ -41,21 +41,7 @@
     grid-row: 1 / 1;
 }
 
-.service-icon .circle{
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  background-color: #E4283E;
-  border-radius: 50%;
-  bottom: -15%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  
-}
 
-.section-service:last-of-type .service-icon .circle{
-  display: none;
-}
 
 
   .section-service:nth-of-type(even) .service-article {
@@ -81,9 +67,6 @@
     }
   }
   @media only screen and (max-width: 900px){
-    .service-icon .circle{
-      display: none ;
-    }
     #lines{
       display: none;
     }
