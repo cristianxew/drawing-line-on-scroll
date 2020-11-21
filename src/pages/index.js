@@ -1,5 +1,5 @@
 import React from "react"
-import Layout from "../components/Layout/layout"
+import Layout from "../components/Layout/Layout"
 import Services from "../components/Services/Services"
 import MainHeader from "../components/MainHeader/MainHeader"
 
