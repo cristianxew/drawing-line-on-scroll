@@ -1,7 +1,6 @@
 import React from "react"
 import Service from "../Service/Service"
 import services from "../../constans/services"
-import "./Services.css"
 
 const Services = () => {
   return (
