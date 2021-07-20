@@ -10,6 +10,7 @@ gsap.registerPlugin(MotionPathPlugin)
 const Lines = ({ path, isEven, isFirst }) => {
   const pathRef = useRef(null)
   const circleRef = useRef(null)
+  const svgRef = useRef(null)
 
   const Circle = React.forwardRef((props, ref) => {
     if (isFirst) {
@@ -50,7 +51,8 @@ const Lines = ({ path, isEven, isFirst }) => {
 
   const initAnimation = useCallback(() => {
     gsap
-      .timeline({})
+      .timeline()
+      .to(svgRef.current, { visibility: "visible", duration: 0.1 })
       .fromTo(
         pathRef.current,
         { strokeDashoffset: isFirst ? 505 : 810 },
@@ -86,26 +88,25 @@ const Lines = ({ path, isEven, isFirst }) => {
   }, [initAnimation])
 
   return (
-    <div className="lines">
-      <svg
-        id="lines"
-        width={isFirst ? "311" : "617"}
-        height={isFirst ? "215" : "217"}
-        viewBox={isFirst ? "0 0 311 215" : "0 0 617 217"}
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path className="p-line p-line-01" d={path} />
-        <path
-          ref={pathRef}
-          className={`p-line p-line-02`}
-          strokeDasharray={isFirst ? 505 : 810}
-          d={path}
-        />
-        <path className="p-line p-line-03" d={path} />
-        <Circle ref={circleRef} />
-      </svg>
-    </div>
+    <svg
+      id="lines"
+      width={isFirst ? "311" : "617"}
+      height={isFirst ? "215" : "217"}
+      viewBox={isFirst ? "0 0 311 215" : "0 0 617 217"}
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      ref={svgRef}
+    >
+      <path className="p-line p-line-01" d={path} />
+      <path
+        ref={pathRef}
+        className={`p-line p-line-02`}
+        strokeDasharray={isFirst ? 505 : 810}
+        d={path}
+      />
+      <path className="p-line p-line-03" d={path} />
+      <Circle ref={circleRef} />
+    </svg>
   )
 }
 

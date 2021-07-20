@@ -1,7 +1,10 @@
+
+
 #lines {
   position: absolute;
   left: 50%;
   bottom: -58%;
+  visibility: hidden;
 }
 
 #lines .p-line-01 {
